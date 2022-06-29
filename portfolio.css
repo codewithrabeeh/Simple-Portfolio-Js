@@ -1,0 +1,113 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.container{
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 0px 0px 100px;
+}
+
+.heading{
+    font-size: 4vw;
+    letter-spacing: 15px;
+}
+
+.box{
+    height: 100px;
+    min-width: 80%;
+    background-color: rosybrown;
+    display: flex;
+}
+
+.box p, h4{
+    position: relative;
+    top: 35px;
+    left: 30px;
+}
+
+.box h4{
+    left: 40px;
+}
+
+
+@keyframes move{
+    0%{
+        left: 40px;
+    }
+    50%{
+        left: 70px;
+    }
+    100%{
+        left: 100px;
+    }
+}
+
+.box h4{
+    animation: move 2s linear infinite;
+    font-weight: 400;
+}
+
+.paragraph{
+    height: auto;
+    width: 80%;
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.three-boxes{
+    height: 180px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.three-box{
+    height: 50%;
+    width: 15%;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.three-box:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+    background-color: rgb(250, 190, 166);
+}
+
+.last-text{
+    margin-top: 30px;
+}
+
+.last-text p{
+    padding-left: 20px;
+}
+
+#last-span{
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    animation: opacity 2s infinite linear;
+}
+
+@keyframes opacity {
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
